@@ -1,3 +1,17 @@
+/* 
+
+- font sizes (px)
+
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 
+
+*/
+
+/* 
+- Spacing System (px)
+
+2 / 4 / 8 / 12 / 16 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
@@ -6,10 +20,126 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 65.2%;
+}
+
 body {
   font-family: "Noto Sans", sans-serif;
 }
 
+/* ------ Generel ------- */
+/* ------ Generel ------- */
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+/* ------ Reusable ------- */
+/* ------ Reusable ------- */
+
+.grid {
+  display: grid;
+  gap: 9.6rem;
+}
+
+.grid--2--cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.5px;
+  margin-bottom: 3.2rem;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  background-color: #217041;
+  font-size: 1.8rem;
+  padding: 1.6rem 3.2rem;
+  color: #ebf9dc;
+  text-decoration: none;
+  border-radius: 100px;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.btn:hover,
+.btn:active {
+  /* background-color: #113821; */
+  background-color: transparent;
+  color: #333;
+  box-shadow: inset 0 0 0 1px #217041;
+}
+
+.fancy-box {
+  max-width: 10rem;
+  background-color: #737070;
+  margin-bottom: 9.6rem;
+}
+
+/* ------ Hero ------- */
+/* ------ Hero ------- */
+
 .hero-section {
   background-color: #ebf9dc;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 9.6rem;
+  padding: 8rem 0;
+}
+
+.hero-text-box {
+  max-width: 45%;
+  text-align: center;
+}
+
+.hero-text-desc {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.hero-img-box {
+  position: relative;
+}
+
+.img-box-customers {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+
+  position: absolute;
+  top: 0;
+}
+
+.customers-text {
+  font-size: 1.8rem;
+}
+
+.customers-img {
+  display: flex;
+  align-items: center;
+}
+
+.customers-img img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: -1.8rem;
+  border: 3px solid #ebf9dc;
 }
