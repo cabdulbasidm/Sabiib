@@ -12,7 +12,9 @@
 2 / 4 / 8 / 12 / 16 / 32 / 48 / 64 / 80 / 96 / 128
 */
 
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"); */
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
 * {
   margin: 0;
@@ -25,7 +27,8 @@ html {
 }
 
 body {
-  font-family: "Noto Sans", sans-serif;
+  /* font-family: "Noto Sans", sans-serif; */
+  font-family: "Rubik", sans-serif;
 }
 
 /* ------ Generel ------- */
@@ -38,6 +41,7 @@ img {
 .container {
   max-width: 120rem;
   margin: 0 auto;
+  /* padding: 0 4.8rem; */
 }
 
 /* ------ Reusable ------- */
@@ -58,6 +62,7 @@ img {
   line-height: 1.05;
   letter-spacing: -0.5px;
   margin-bottom: 3.2rem;
+  color: #555;
 }
 
 .primary-btn:link,
@@ -88,6 +93,51 @@ img {
   background-color: transparent;
   color: #333;
   box-shadow: inset 0 0 0 1px #217041;
+}
+
+/* ------ Header ------- */
+/* ------ Header ------- */
+.header {
+  background-color: #ebf9dc;
+}
+
+.header-nav {
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 2.4rem;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+  list-style-type: none;
+  padding: 1.6rem 3.2rem;
+  border: 1px solid #217041;
+  border-radius: 100px;
+
+  /* position: fixed; */
+  /* top: 10%; */
+  /* z-index: 100; */
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.8rem;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  font-weight: 800;
 }
 
 /* ------ Hero ------- */
@@ -215,11 +265,32 @@ img {
 /* ------ CTA ------- */
 /* ------ CTA ------- */
 .cta-section {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  margin-bottom: 9.6rem;
+}
+
+.cta-section span {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 700;
+  /* color: #217041; */
+  color: #c60100;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 6.4rem;
+}
+
+.cta-box {
   display: flex;
   justify-content: space-around;
   align-items: center;
 
-  margin-bottom: 9.6rem;
+  margin-bottom: 3.2rem;
 }
 
 .cta-img {
@@ -239,5 +310,52 @@ img {
 .cta-text p {
   font-size: 2rem;
   line-height: 1.6;
-  margin-bottom: 4.8rem;
+  margin-bottom: 6.4rem;
+}
+
+/* ------ Sabab Annaga ------- */
+/* ------ Sabab Annaga ------- */
+
+.sabab-annaga-box {
+  max-width: 80%;
+  margin: 0 auto;
+  background-color: #1a5a34;
+  border-radius: 10px;
+  display: flex;
+  gap: 1.6rem;
+}
+
+.sabab-annaga {
+  max-width: 33%;
+  padding: 1.6rem 3.2rem;
+}
+
+.sabab-annaga i {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #ebf9dc;
+  background-color: #faa805a9;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sabab-annaga h3 {
+  font-size: 2.8rem;
+  font-weight: 600;
+  /* color: #ebf9dc; */
+  /* color: #d1ded6; */
+  color: #e8efeb;
+  margin-bottom: 0.8rem;
+}
+
+.sabab-annaga p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  /* color: #ebf9dc; */
+  /* color: #bacec2; */
+  color: #a3bdae;
 }
