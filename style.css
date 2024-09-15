@@ -354,3 +354,63 @@ img {
   font-weight: 400;
   color: #a3bdae;
 }
+
+/* ------ Promotion ------- */
+/* ------ Promotion ------- */
+.promotion-section {
+  background-color: #c60100;
+  /* background-color: #faa805a9; */
+  height: 12.8rem;
+  /* text-align: center; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9.6rem 0;
+}
+
+.promotion {
+  max-width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  align-items: center;
+  text-align: center;
+
+  p {
+    font-size: 2rem;
+    color: #e8efeb;
+  }
+}
+
+.promotion-btn {
+  max-width: 100%;
+  display: flex;
+}
+
+.promotion input {
+  max-width: 40rem;
+  padding: 1.2rem 1.2rem;
+  outline: none;
+  font-size: 1.6rem;
+  color: #333;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: none;
+}
+
+.promotion-link:link,
+.promotion-link:visited {
+  /* margin-left: -11.2rem; */
+  color: #e8efeb;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  /* background-color: #c60100; */
+  background-color: #faa805a9;
+  max-width: 30.2rem;
+  padding: 1.2rem 1.2rem;
+
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
