@@ -276,7 +276,6 @@ img {
   display: inline-block;
   font-size: 2rem;
   font-weight: 700;
-  /* color: #217041; */
   color: #c60100;
   text-transform: uppercase;
   letter-spacing: 0.75px;
@@ -346,8 +345,6 @@ img {
 .sabab-annaga h3 {
   font-size: 2.8rem;
   font-weight: 600;
-  /* color: #ebf9dc; */
-  /* color: #d1ded6; */
   color: #e8efeb;
   margin-bottom: 0.8rem;
 }
@@ -355,7 +352,5 @@ img {
 .sabab-annaga p {
   font-size: 1.4rem;
   font-weight: 400;
-  /* color: #ebf9dc; */
-  /* color: #bacec2; */
   color: #a3bdae;
 }
