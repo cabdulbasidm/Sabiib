@@ -60,12 +60,21 @@ img {
   margin-bottom: 3.2rem;
 }
 
+.primary-btn:link,
+.primary-btn:visited {
+  padding: 1.6rem 3.2rem;
+}
+
+.secondary-btn:link,
+.secondary-btn:visited {
+  padding: 1.2rem 2.4rem;
+}
+
 .btn:link,
 .btn:visited {
   display: inline-block;
   background-color: #217041;
   font-size: 1.8rem;
-  padding: 1.6rem 3.2rem;
   color: #ebf9dc;
   text-decoration: none;
   border-radius: 100px;
@@ -90,6 +99,22 @@ img {
 
 .hero {
   padding: 8rem 0;
+  margin-bottom: 9.6rem;
+
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 9.6rem; */
+}
+
+/* .hero img {
+  width: 70rem;
+} */
+
+.hero-text-box {
+  max-width: 75%;
+  text-align: start;
 }
 
 .hero-text-desc {
@@ -193,8 +218,26 @@ img {
   display: flex;
   justify-content: space-around;
   align-items: center;
+
+  margin-bottom: 9.6rem;
 }
 
 .cta-img {
   width: 40rem;
+  border-radius: 67% 33% 58% 42% / 39% 48% 52% 61%;
+}
+
+.cta-text {
+  max-width: 50%;
+}
+
+.cta-text h2 {
+  font-size: 3.6rem;
+  margin-bottom: 3.2rem;
+}
+
+.cta-text p {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
 }
